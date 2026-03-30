@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="독창적이고 사용자 중심의 고품질 콘텐츠를 꾸준히 발행하는 콘텐츠 허브 페이지"
+    />
+    <title>콘텐츠 허브 | 고품질 콘텐츠 운영</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">본문 바로가기</a>
+
+    <header class="site-header">
+      <div class="container">
+        <p class="eyebrow">Quality First Publishing</p>
+        <h1>콘텐츠 허브</h1>
+        <p class="intro">
+          사용자에게 실제로 도움이 되는 독창적 콘텐츠를 꾸준히 발행하고 관리합니다.
+        </p>
+      </div>
+    </header>
+
+    <nav class="site-nav" aria-label="주요 메뉴">
+      <div class="container nav-inner">
+        <a href="#latest">최신 콘텐츠</a>
+        <a href="#principles">운영 원칙</a>
+        <a href="#about">소개</a>
+      </div>
+    </nav>
+
+    <main id="main-content" class="container">
+      <section id="latest" class="card">
+        <div class="section-head">
+          <h2>최신 콘텐츠</h2>
+          <button id="toggleViewBtn" type="button" aria-pressed="false">
+            카드 강조 보기
+          </button>
+        </div>
+        <p class="section-description">
+          아래 목록은 향후 CMS 또는 JSON 기반 데이터로 확장하기 쉽게 구조화되어 있습니다.
+        </p>
+
+        <ul class="post-list" id="postList" aria-live="polite">
+          <li class="post-item featured">
+            <article>
+              <h3>사용자 중심 콘텐츠 기획 체크리스트</h3>
+              <p>
+                독자 질문을 먼저 수집하고, 답을 명확하게 제공하는 구조로 콘텐츠를 설계하는 방법.
+              </p>
+              <p class="meta">2026-03-30 · 운영팀</p>
+            </article>
+          </li>
+          <li class="post-item">
+            <article>
+              <h3>광고보다 정보가 먼저인 페이지 구조</h3>
+              <p>
+                본문 접근성과 가독성을 확보하면서도 수익 모델을 균형 있게 배치하는 기본 원칙.
+              </p>
+              <p class="meta">2026-03-27 · 운영팀</p>
+            </article>
+          </li>
+          <li class="post-item">
+            <article>
+              <h3>콘텐츠 품질 점검 루틴</h3>
+              <p>
+                발행 전 사실성, 중복성, 가독성, 탐색성 점검을 표준화하는 간단한 내부 프로세스.
+              </p>
+              <p class="meta">2026-03-23 · 편집자</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section id="principles" class="card">
+        <h2>운영 원칙</h2>
+        <ul class="principle-list">
+          <li>독창적이고 유용한 정보 작성 (복붙/중복 콘텐츠 지양)</li>
+          <li>사용자가 원하는 정보를 빠르게 찾을 수 있는 명확한 구조</li>
+          <li>과도한 광고/방해 요소보다 신뢰도와 사용성 우선</li>
+          <li>발행 이후 정기 업데이트로 정보 최신성 유지</li>
+        </ul>
+      </section>
+
+      <section id="about" class="card">
+        <h2>소개</h2>
+        <p>
+          이 페이지는 정적 호스팅 환경(Cloudflare Pages)에 바로 배포 가능한 최소 구조입니다.
+          앞으로 게시물 데이터 파일, 카테고리 페이지, 검색 기능을 단계적으로 확장할 수 있습니다.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© 2026 Content Hub. Built with vanilla HTML/CSS/JS.</small>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
