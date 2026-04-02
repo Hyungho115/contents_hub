@@ -1,0 +1,24 @@
+# Secrets
+.kaggle/kaggle.json
+.kaggle/
+
+# Local downloaded data
+data/raw/**/*.zip
+data/raw/**/*.csv
+data/raw/**/*.json
+data/raw/**/*.parquet
+data/raw/**/*.tsv
+data/
+
+# Local ontology/workbench assets kept outside web deploy scope
+notes/
+ontology/
+pipeline/
+tools/
+deployment_staging/
+ONTOLOGY_WORKFLOW_CONTEXT.md
+requirements.txt
+
+# Python cache
+__pycache__/
+*.pyc
