@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="콘텐츠 허브는 영화 입문 가이드와 탐색 허브를 함께 운영하는 영화 큐레이션 사이트입니다. 프랜차이즈 흐름, 감상 순서, 테마별 연결을 중심으로 정리합니다."
+      content="콘텐츠 허브는 영화 입문 가이드, 테마 큐레이션, 주제별 콘텐츠 허브를 연결하는 영화 큐레이션 사이트입니다. 프랜차이즈 흐름과 다음 감상 경로를 이해하기 쉽게 정리합니다."
     />
     <link rel="canonical" href="https://contents-hub.pages.dev/index.html" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="콘텐츠 허브 | 영화 탐색형 큐레이션 사이트" />
+    <meta property="og:title" content="콘텐츠 허브 | 영화 큐레이션과 주제별 콘텐츠 허브" />
     <meta
       property="og:description"
-      content="영화 입문 가이드, 프랜차이즈 흐름, 테마 허브를 통해 한 편의 영화에서 다음 탐색 축으로 자연스럽게 이어지는 구조를 제공합니다."
+      content="영화 입문 가이드, 감상 순서 정리, 주제별 콘텐츠 허브를 통해 한 편의 영화에서 다음 탐색 경로로 자연스럽게 이어지는 구조를 제공합니다."
     />
     <meta property="og:url" content="https://contents-hub.pages.dev/index.html" />
     <meta property="og:site_name" content="콘텐츠 허브" />
     <meta name="google-adsense-account" content="ca-pub-7123908147176718" />
-    <title>콘텐츠 허브 | 영화 탐색형 큐레이션 사이트</title>
+    <title>콘텐츠 허브 | 영화 큐레이션과 주제별 콘텐츠 허브</title>
     <link rel="stylesheet" href="./styles.css" />
     <script
       async
@@ -54,7 +54,7 @@
         "@type": "WebSite",
         "name": "콘텐츠 허브",
         "url": "https://contents-hub.pages.dev/",
-        "description": "영화 입문 가이드와 탐색 허브를 함께 운영하는 영화 큐레이션 사이트",
+        "description": "영화 입문 가이드, 테마 큐레이션, 주제별 콘텐츠 허브를 함께 운영하는 영화 큐레이션 사이트",
         "publisher": {
           "@type": "Organization",
           "name": "콘텐츠 허브 운영팀"
@@ -66,19 +66,34 @@
     <a class="skip-link" href="#main-content">본문 바로가기</a>
 
     <header class="site-header">
-      <div class="container">
-        <p class="eyebrow">Movie Guide & Discovery</p>
-        <h1>콘텐츠 허브</h1>
-        <p class="intro">
-          영화 한 편을 보고 끝나지 않게 만드는 사이트를 목표로 합니다. 프랜차이즈 입문 가이드,
-          감상 순서 정리, 테마 허브를 통해 다음에 볼 영화까지 자연스럽게 이어집니다.
-        </p>
+      <div class="container hero-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">Movie Guide & Discovery</p>
+          <h1>콘텐츠 허브</h1>
+          <p class="intro">
+            영화를 한 편 보고 끝나지 않게 만드는 것을 목표로 합니다. 시리즈를 어디서부터 보면 좋을지,
+            비슷한 분위기의 다음 영화는 무엇인지, 그리고 같은 축의 글을 어디로 이어서 읽으면 좋을지를
+            영화 중심으로 정리합니다.
+          </p>
+          <div class="hero-actions">
+            <a class="button-link" href="#hubs">주제별 콘텐츠 허브 보기</a>
+            <a class="button-link secondary" href="./blog/index.html">영화 글 아카이브</a>
+          </div>
+        </div>
+        <figure class="hero-visual">
+          <img
+            class="hero-image"
+            src="./assets/hero-cinema-scene.svg"
+            alt="필름 프레임과 장르 포스터가 배치된 영화 큐레이션 사이트 메인 일러스트"
+          />
+        </figure>
       </div>
     </header>
 
     <nav class="site-nav" aria-label="주요 메뉴">
       <div class="container nav-inner">
-        <a href="#explore">탐색 허브</a>
+        <a href="#guide">이 사이트 보는 법</a>
+        <a href="#hubs">콘텐츠 허브</a>
         <a href="#latest">최신 영화 글</a>
         <a href="#standards">사이트 기준</a>
         <a href="./blog/index.html">영화 글 전체 보기</a>
@@ -90,44 +105,82 @@
       <section class="card summary-card">
         <p class="summary-lead">현재 공개 상태</p>
         <ul class="summary-list">
-          <li><strong>탐색 허브 3개</strong> : Space Sci-Fi / Superhero Action / Family Animation</li>
-          <li><strong>입문 가이드 7편</strong> : 프랜차이즈 진입 글과 큐레이션 글 중심</li>
-          <li><strong>영화 중심 운영</strong> : 비영화 주제는 메인 동선에서 제외하고 영화 글만 전면 배치</li>
+          <li><strong>콘텐츠 허브 3개</strong> : Space Sci-Fi / Superhero Action / Family Animation</li>
+          <li><strong>영화 글 7편</strong> : 프랜차이즈 입문 가이드와 테마 큐레이션 중심</li>
+          <li><strong>운영 방향</strong> : 방문자가 쉽게 이해할 수 있는 영화 중심 구조를 우선합니다.</li>
         </ul>
       </section>
 
-      <section id="explore" class="card">
+      <section id="guide" class="card">
         <div class="section-head">
-          <h2>탐색 허브</h2>
+          <h2>이 사이트 보는 법</h2>
         </div>
         <p class="section-description">
-          허브는 검색 페이지가 아니라, 영화를 어떤 축으로 더 따라가면 좋을지 보여주는 입구입니다.
+          콘텐츠 허브는 영화 글을 세 가지 문법으로 정리합니다. 먼저 읽고 싶은 방식에 맞춰 들어오면 됩니다.
         </p>
-        <ul class="post-list">
+        <div class="guide-grid">
+          <article class="guide-card">
+            <h3>입문 가이드</h3>
+            <p>시리즈를 처음 볼 때 어디서 시작하면 좋은지, 어느 지점까지 보면 흐름이 잡히는지 정리한 글입니다.</p>
+          </article>
+          <article class="guide-card">
+            <h3>테마 큐레이션</h3>
+            <p>비슷한 분위기나 감상 방향으로 묶어서, 취향에 맞는 다음 영화를 고르는 데 도움을 주는 글입니다.</p>
+          </article>
+          <article class="guide-card">
+            <h3>콘텐츠 허브</h3>
+            <p>같은 축의 글을 한데 모아, 지금 읽고 있는 글 다음에 어디로 이동하면 좋을지 보여주는 영화 길잡이입니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="hubs" class="card">
+        <div class="section-head">
+          <h2>주제별 콘텐츠 허브</h2>
+        </div>
+        <p class="section-description">
+          콘텐츠 허브는 비슷한 글을 한데 묶어 다음에 어디로 이동하면 좋을지 보여주는 주제별 입구입니다.
+        </p>
+        <ul class="post-list media-post-list">
           <li class="post-item featured">
-            <a href="./blog/space-scifi-hub.html" style="text-decoration: none; color: inherit; display: block;">
+            <a class="post-link" href="./blog/space-scifi-hub.html">
+              <img
+                class="hub-thumb"
+                src="./assets/hub-space-scifi.svg"
+                alt="별과 행성이 보이는 Space Sci-Fi 콘텐츠 허브 이미지"
+              />
               <article>
-                <h3>Space Sci-Fi 탐색 허브</h3>
+                <h3>Space Sci-Fi 콘텐츠 허브</h3>
                 <p>우주와 미래를 다루는 SF 영화를 가벼운 입구, 고전 입구, 몰입형 입구로 나눠 연결합니다.</p>
-                <p class="meta">테마 허브 · 현재 공개</p>
+                <p class="meta">주제별 콘텐츠 허브 · 현재 공개</p>
               </article>
             </a>
           </li>
           <li class="post-item">
-            <a href="./blog/superhero-action-hub.html" style="text-decoration: none; color: inherit; display: block;">
+            <a class="post-link" href="./blog/superhero-action-hub.html">
+              <img
+                class="hub-thumb"
+                src="./assets/hub-superhero-action.svg"
+                alt="도시의 빛과 히어로 액션을 연상시키는 Superhero Action 콘텐츠 허브 이미지"
+              />
               <article>
-                <h3>Superhero Action 탐색 허브</h3>
-                <p>Superman과 Spider-Man을 두 입구로 삼아 고전 슈퍼히어로와 현대 블록버스터 축을 연결합니다.</p>
-                <p class="meta">테마 허브 · 현재 공개</p>
+                <h3>Superhero Action 콘텐츠 허브</h3>
+                <p>Superman과 Spider-Man을 입구로 삼아 고전 슈퍼히어로와 현대 블록버스터 감각을 이어줍니다.</p>
+                <p class="meta">주제별 콘텐츠 허브 · 현재 공개</p>
               </article>
             </a>
           </li>
           <li class="post-item">
-            <a href="./blog/family-animation-hub.html" style="text-decoration: none; color: inherit; display: block;">
+            <a class="post-link" href="./blog/family-animation-hub.html">
+              <img
+                class="hub-thumb"
+                src="./assets/hub-family-animation.svg"
+                alt="따뜻한 하늘과 장난감, 풍선이 보이는 Family Animation 콘텐츠 허브 이미지"
+              />
               <article>
-                <h3>Family Animation 탐색 허브</h3>
-                <p>Toy Story를 중심축으로, 따뜻한 모험과 유머형 애니메이션으로 확장되는 흐름을 정리합니다.</p>
-                <p class="meta">테마 허브 · 현재 공개</p>
+                <h3>Family Animation 콘텐츠 허브</h3>
+                <p>Toy Story를 중심축으로 두고, 가족 애니메이션의 감정선과 확장 경로를 정리합니다.</p>
+                <p class="meta">주제별 콘텐츠 허브 · 현재 공개</p>
               </article>
             </a>
           </li>
@@ -140,7 +193,7 @@
           <button id="toggleViewBtn" type="button" aria-pressed="false">카드 강조 보기</button>
         </div>
         <p class="section-description">
-          입문자 기준으로 “무엇부터 보면 좋은지”를 먼저 정리한 글을 중심으로 운영합니다.
+          입문 가이드와 큐레이션 가운데 지금 바로 읽기 좋은 글부터 배치했습니다.
         </p>
 
         <ul class="post-list" id="postList" aria-live="polite">
@@ -156,7 +209,7 @@
           <li class="post-item">
             <a href="./blog/family-animation-entry-curation.html" style="text-decoration: none; color: inherit; display: block;">
               <article>
-                <h3>가족과 함께 보기 좋은 애니메이션은 어디서부터 고를까</h3>
+                <h3>가족과 함께 보기 좋은 애니메이션은 어디서 골라볼까</h3>
                 <p>Toy Story를 중심축으로 Family Animation 입문 경로를 정리합니다.</p>
                 <p class="meta">테마 큐레이션</p>
               </article>
@@ -174,8 +227,8 @@
           <li class="post-item">
             <a href="./blog/toy-story-trilogy-entry-guide.html" style="text-decoration: none; color: inherit; display: block;">
               <article>
-                <h3>Toy Story는 왜 3편까지 보면 하나의 이야기처럼 읽힐까</h3>
-                <p>Toy Story 초반 3부작의 흐름과 감정선을 입문자 기준으로 정리합니다.</p>
+                <h3>Toy Story는 3편까지 보면 어떤 이야기 축이 잡힐까</h3>
+                <p>Toy Story 초반 3부작의 흐름과 감정선을 입문용 가이드로 정리합니다.</p>
                 <p class="meta">프랜차이즈 입문 가이드</p>
               </article>
             </a>
@@ -196,16 +249,16 @@
         <h2>사이트 기준</h2>
         <ul class="principle-list">
           <li>영화와 직접 관련된 글만 메인 동선에 노출합니다.</li>
-          <li>프랜차이즈 순서, 감상 흐름, 테마 확장을 독자 입장에서 먼저 설명합니다.</li>
-          <li>페이지마다 읽기 흐름을 우선하고, 허브는 과도한 기능보다 명확한 다음 이동을 제공합니다.</li>
-          <li>내부 링크는 추적용 파라미터보다 깔끔한 탐색 구조를 우선합니다.</li>
+          <li>프랜차이즈 순서, 감상 흐름, 테마 확장을 처음 방문하는 사람의 입장에서 먼저 설명합니다.</li>
+          <li>페이지마다 읽기 순서를 우선하고, 허브는 과도한 기능보다 명확한 다음 이동을 제공합니다.</li>
+          <li>내부 추적 파라미터보다 깔끔한 URL과 탐색 구조를 우선합니다.</li>
         </ul>
       </section>
 
       <section class="card">
         <h2>전체 아카이브 보기</h2>
         <p class="section-description">
-          최신 글뿐 아니라 전체 영화 가이드와 허브를 한 번에 보고 싶다면 영화 글 인덱스로 이동하세요.
+          최신 글뿐 아니라 전체 영화 가이드와 콘텐츠 허브를 한 번에 보고 싶다면 영화 글 아카이브로 이동해 주세요.
         </p>
         <p><a href="./blog/index.html">영화 글 전체 보기</a></p>
       </section>

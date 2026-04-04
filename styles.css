@@ -89,6 +89,73 @@ h1 {
   font-size: 1.05rem;
 }
 
+.hero-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.site-header--compact {
+  padding: 2.4rem 0 1.8rem;
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+}
+
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(233, 201, 141, 0.42);
+  background: rgba(255, 250, 242, 0.12);
+  color: #fff7ee;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 140ms ease, background 140ms ease, border-color 140ms ease;
+}
+
+.button-link:hover,
+.button-link:focus-visible {
+  transform: translateY(-1px);
+  background: rgba(255, 250, 242, 0.2);
+  border-color: rgba(245, 214, 154, 0.7);
+}
+
+.button-link.secondary {
+  background: rgba(18, 24, 36, 0.32);
+}
+
+.hero-visual {
+  margin: 0;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  border: 1px solid rgba(233, 201, 141, 0.34);
+  background: #101826;
+  box-shadow: 0 24px 50px rgba(9, 10, 16, 0.28);
+}
+
+.eyebrow-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .site-nav {
   position: sticky;
   top: 0;
@@ -171,6 +238,31 @@ h2 {
   margin: 0.55rem 0 1rem;
 }
 
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.guide-card {
+  border: 1px solid rgba(229, 215, 196, 0.95);
+  border-radius: 14px;
+  padding: 1rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 250, 242, 0.94)),
+    var(--surface-strong);
+}
+
+.guide-card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.02rem;
+}
+
+.guide-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
 button {
   border: 1px solid var(--primary);
   background: var(--primary);
@@ -219,6 +311,36 @@ button:focus-visible {
 .post-item p {
   margin: 0;
   color: #342f2b;
+}
+
+.post-link {
+  display: grid;
+  grid-template-columns: 188px minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: stretch;
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-link article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hub-thumb {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 148px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(188, 141, 70, 0.22);
+  background: #131a25;
+}
+
+.media-post-list .post-item {
+  padding: 0.8rem;
 }
 
 .meta {
@@ -342,6 +464,24 @@ a:hover {
 @media (max-width: 720px) {
   .site-header {
     padding: 3.2rem 0 2.2rem;
+  }
+
+  .hero-shell,
+  .guide-grid,
+  .post-link {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .button-link {
+    width: 100%;
+  }
+
+  .hub-thumb {
+    min-height: 200px;
   }
 
   .card,

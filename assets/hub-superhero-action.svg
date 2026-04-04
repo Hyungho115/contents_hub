@@ -1,0 +1,41 @@
+<svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="124" y1="74" x2="850" y2="612" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#141A28"/>
+      <stop offset="0.55" stop-color="#3F1020"/>
+      <stop offset="1" stop-color="#8A1D31"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="282" y1="104" x2="676" y2="604" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD68A"/>
+      <stop offset="1" stop-color="#FF5A5F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="640" rx="34" fill="url(#bg)"/>
+  <circle cx="190" cy="120" r="52" fill="#FFE2A6" fill-opacity="0.86"/>
+  <circle cx="190" cy="120" r="74" stroke="#FFE2A6" stroke-opacity="0.32" stroke-width="4"/>
+
+  <g opacity="0.35">
+    <path d="M196 114L360 228" stroke="url(#beam)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M222 96L462 258" stroke="url(#beam)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M250 90L608 332" stroke="url(#beam)" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <path d="M480 128L512 226L612 228L532 288L560 390L480 328L402 390L428 288L346 228L448 226L480 128Z" fill="#F9D78D"/>
+  <path d="M476 210L500 280L576 284L514 328L536 402L476 354L418 402L438 328L376 284L452 280L476 210Z" fill="#FFF2D4" fill-opacity="0.84"/>
+
+  <g fill="#0F1320">
+    <rect x="92" y="442" width="62" height="138" rx="6"/>
+    <rect x="164" y="384" width="86" height="196" rx="6"/>
+    <rect x="264" y="332" width="74" height="248" rx="6"/>
+    <rect x="350" y="286" width="92" height="294" rx="6"/>
+    <rect x="456" y="354" width="70" height="226" rx="6"/>
+    <rect x="536" y="314" width="76" height="266" rx="6"/>
+    <rect x="624" y="374" width="78" height="206" rx="6"/>
+    <rect x="716" y="420" width="60" height="160" rx="6"/>
+    <rect x="788" y="456" width="80" height="124" rx="6"/>
+  </g>
+
+  <path d="M446 406C468 378 492 366 528 366C558 366 586 376 612 402V580H350V470C374 444 404 426 446 406Z" fill="#141823" fill-opacity="0.82"/>
+  <path d="M452 426C474 404 496 392 528 392C556 392 580 400 600 418L560 444L528 428L492 444L452 426Z" fill="#F8E0AA"/>
+</svg>
