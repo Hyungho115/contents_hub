@@ -5,21 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="독창적이고 사용자 중심의 고품질 콘텐츠를 꾸준히 발행하는 콘텐츠 허브 페이지"
+      content="콘텐츠 허브는 읽을 만한 글과 탐색 허브를 함께 운영하는 콘텐츠 아카이브형 블로그입니다."
     />
     <link rel="canonical" href="https://contents-hub.pages.dev/index.html" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="콘텐츠 허브 | 고품질 콘텐츠 운영" />
-    <meta property="og:description" content="사용자에게 실제로 도움이 되는 독창적 콘텐츠를 꾸준히 발행하고 관리합니다." />
+    <meta property="og:title" content="콘텐츠 허브 | 탐색형 콘텐츠 블로그" />
+    <meta property="og:description" content="좋은 글을 읽고, 관련 글과 탐색 허브로 자연스럽게 이어지는 콘텐츠 블로그입니다." />
     <meta property="og:url" content="https://contents-hub.pages.dev/index.html" />
     <meta property="og:site_name" content="콘텐츠 허브" />
     <meta name="google-adsense-account" content="ca-pub-7123908147176718">
-    <title>콘텐츠 허브 | 고품질 콘텐츠 운영</title>
+    <title>콘텐츠 허브 | 탐색형 콘텐츠 블로그</title>
     <link rel="stylesheet" href="./styles.css" />
-    <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7123908147176718"
      crossorigin="anonymous"></script>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8X6VN0MJ3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -27,7 +25,6 @@
       gtag('js', new Date());
       gtag('config', 'G-M8X6VN0MJ3');
     </script>
-    <!-- Microsoft Clarity -->
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -35,7 +32,6 @@
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         })(window, document, "clarity", "script", "w3vvl5ocb8");
     </script>
-    <!-- Icon Management -->
     <script src="./icon-loader.js"></script>
     <script type="application/ld+json">
     {
@@ -43,7 +39,7 @@
       "@type": "WebSite",
       "name": "콘텐츠 허브",
       "url": "https://contents-hub.pages.dev/",
-      "description": "독창적이고 사용자 중심의 고품질 콘텐츠를 꾸준히 발행하는 콘텐츠 허브",
+      "description": "읽을 만한 글과 탐색 허브를 함께 운영하는 콘텐츠 아카이브형 블로그",
       "publisher": {
         "@type": "Organization",
         "name": "콘텐츠 허브 운영팀"
@@ -59,20 +55,20 @@
         <p class="eyebrow">Quality First Publishing</p>
         <h1>콘텐츠 허브</h1>
         <p class="intro">
-          사용자에게 실제로 도움이 되는 독창적 콘텐츠를 꾸준히 발행하고 관리합니다.
+          좋은 글을 읽는 경험과, 관련 주제로 자연스럽게 이어지는 탐색 경험을 함께 만드는 콘텐츠 블로그입니다.
         </p>
       </div>
     </header>
 
     <nav class="site-nav" aria-label="주요 메뉴">
       <div class="container nav-inner">
-        <a href="#latest">최신 콘텐츠</a>
+        <a href="#explore">탐색 허브</a>
+        <a href="#latest">최신 글</a>
         <a href="#principles">운영 원칙</a>
         <a href="#about">소개</a>
       </div>
     </nav>
 
-    <!-- 상단 광고 영역 -->
     <div class="container ad-container top-ad">
       <ins class="adsbygoogle"
            style="display:block"
@@ -86,48 +82,80 @@
     </div>
 
     <main id="main-content" class="container">
+      <section id="explore" class="card">
+        <div class="section-head">
+          <h2>탐색 허브</h2>
+        </div>
+        <p class="section-description">
+          글 하나만 읽고 끝나는 대신, 주제 축을 따라 이동할 수 있는 허브를 함께 열고 있습니다.
+        </p>
+        <ul class="post-list">
+          <li class="post-item featured">
+            <a href="./blog/space-scifi-hub.html?utm_source=home&utm_medium=internal&utm_campaign=explore" style="text-decoration: none; color: inherit; display: block;">
+              <article>
+                <h3>Space Sci-Fi 탐색 허브</h3>
+                <p>우주 SF를 가벼운 탐색 입구, 고전 입구, 몰입형 입구로 나눠 현재 글과 앞으로 붙을 글을 연결합니다.</p>
+                <p class="meta">허브 MVP · 2026-04-04</p>
+              </article>
+            </a>
+          </li>
+        </ul>
+      </section>
+
       <section id="latest" class="card">
         <div class="section-head">
-          <h2>최신 콘텐츠</h2>
+          <h2>최신 글</h2>
           <button id="toggleViewBtn" type="button" aria-pressed="false">
             카드 강조 보기
           </button>
         </div>
         <p class="section-description">
-          아래 목록은 향후 CMS 또는 JSON 기반 데이터로 확장하기 쉽게 구조화되어 있습니다.
+          프랜차이즈 입문 글, 큐레이션 글, 허브 글을 함께 쌓아가며 읽기와 탐색을 동시에 강화하고 있습니다.
         </p>
 
         <ul class="post-list" id="postList" aria-live="polite">
           <li class="post-item featured">
-            <a href="./blog/user-centric-content-checklist.html?utm_source=home&utm_medium=internal&utm_campaign=featured" style="text-decoration: none; color: inherit; display: block;">
+            <a href="./blog/spider-man-raimi-trilogy-entry-guide.html?utm_source=home&utm_medium=internal&utm_campaign=featured" style="text-decoration: none; color: inherit; display: block;">
               <article>
-                <h3>사용자 중심 콘텐츠 기획 체크리스트</h3>
-                <p>
-                  독자 질문을 먼저 수집하고, 답을 명확하게 제공하는 구조로 콘텐츠를 설계하는 방법.
-                </p>
-                <p class="meta">2026-03-30 · 운영팀</p>
+                <h3>스파이더맨 실사 영화는 어디서부터 보면 좋을까</h3>
+                <p>샘 레이미 3부작을 기준으로 Spider-Man 실사 영화의 첫 입문 축을 정리합니다.</p>
+                <p class="meta">2026-04-04 · 운영팀</p>
               </article>
             </a>
           </li>
           <li class="post-item">
-            <a href="./blog/information-first-page-structure.html?utm_source=home&utm_medium=internal&utm_campaign=latest" style="text-decoration: none; color: inherit; display: block;">
+            <a href="./blog/family-animation-entry-curation.html?utm_source=home&utm_medium=internal&utm_campaign=latest" style="text-decoration: none; color: inherit; display: block;">
               <article>
-                <h3>광고보다 정보가 먼저인 페이지 구조</h3>
-                <p>
-                  본문 접근성과 가독성을 확보하면서도 수익 모델을 균형 있게 배치하는 기본 원칙.
-                </p>
-                <p class="meta">2026-03-27 · 운영팀</p>
+                <h3>가족과 함께 보기 좋은 애니메이션은 어디서부터 고를까</h3>
+                <p>Toy Story를 중심축으로 Family Animation 입문 경로를 정리합니다.</p>
+                <p class="meta">2026-04-04 · 운영팀</p>
               </article>
             </a>
           </li>
           <li class="post-item">
-            <a href="./blog/content-quality-routine.html?utm_source=home&utm_medium=internal&utm_campaign=latest" style="text-decoration: none; color: inherit; display: block;">
+            <a href="./blog/space-scifi-entry-guide.html?utm_source=home&utm_medium=internal&utm_campaign=latest" style="text-decoration: none; color: inherit; display: block;">
               <article>
-                <h3>콘텐츠 품질 점검 루틴</h3>
-                <p>
-                  발행 전 사실성, 중복성, 가독성, 탐색성 점검을 표준화하는 간단한 내부 프로세스.
-                </p>
-                <p class="meta">2026-03-23 · 편집자</p>
+                <h3>Space Sci-Fi는 어디서부터 보면 좋을까</h3>
+                <p>우주와 미래를 다루는 SF 영화를 고전 입구와 몰입형 입구로 나눠 정리합니다.</p>
+                <p class="meta">2026-04-04 · 운영팀</p>
+              </article>
+            </a>
+          </li>
+          <li class="post-item">
+            <a href="./blog/toy-story-trilogy-entry-guide.html?utm_source=home&utm_medium=internal&utm_campaign=latest" style="text-decoration: none; color: inherit; display: block;">
+              <article>
+                <h3>토이 스토리는 왜 3편까지 보면 하나의 이야기처럼 남을까</h3>
+                <p>Toy Story 초반 3부작의 흐름과 감정선을 입문자 기준으로 정리합니다.</p>
+                <p class="meta">2026-04-04 · 운영팀</p>
+              </article>
+            </a>
+          </li>
+          <li class="post-item">
+            <a href="./blog/mission-impossible-entry-guide.html?utm_source=home&utm_medium=internal&utm_campaign=latest" style="text-decoration: none; color: inherit; display: block;">
+              <article>
+                <h3>미션 임파서블은 어디서부터 보면 좋을까</h3>
+                <p>Mission: Impossible 시리즈의 초반 3편과 이후 확장 구간을 나눠 처음 보는 사람 기준으로 정리합니다.</p>
+                <p class="meta">2026-04-04 · 운영팀</p>
               </article>
             </a>
           </li>
@@ -137,18 +165,19 @@
       <section id="principles" class="card">
         <h2>운영 원칙</h2>
         <ul class="principle-list">
-          <li>독창적이고 유용한 정보 작성 (복붙/중복 콘텐츠 지양)</li>
-          <li>사용자가 원하는 정보를 빠르게 찾을 수 있는 명확한 구조</li>
-          <li>과도한 광고/방해 요소보다 신뢰도와 사용성 우선</li>
-          <li>발행 이후 정기 업데이트로 정보 최신성 유지</li>
+          <li>읽을 가치가 있는 글을 먼저 만든다.</li>
+          <li>글과 글 사이를 주제 축으로 연결해 탐색 경험을 키운다.</li>
+          <li>복잡한 기능보다 읽기 흐름과 탐색 흐름을 우선한다.</li>
+          <li>새 글과 허브는 점진적으로 확장한다.</li>
         </ul>
       </section>
 
       <section id="about" class="card">
         <h2>소개</h2>
         <p>
-          이 페이지는 정적 호스팅 환경(Cloudflare Pages)에 바로 배포 가능한 최소 구조입니다.
-          앞으로 게시물 데이터 파일, 카테고리 페이지, 검색 기능을 단계적으로 확장할 수 있습니다.
+          이 페이지는 Cloudflare Pages 기반의 정적 사이트로 운영됩니다.
+          프랜차이즈 입문 글, 테마 큐레이션 글, 탐색 허브를 함께 쌓아가며
+          블로그와 탐색 아카이브의 중간 형태를 만드는 중입니다.
         </p>
       </section>
     </main>
