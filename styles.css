@@ -557,6 +557,140 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
+.faulty-terminal-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-main {
+  display: grid;
+  gap: 1.3rem;
+}
+
+.contact-hero-panel {
+  position: relative;
+  min-height: 35rem;
+  padding: 0;
+  overflow: hidden;
+  border-color: rgba(255, 255, 255, 0.08);
+  background: #030404;
+  color: var(--text-inverse);
+}
+
+.contact-terminal-layer {
+  position: absolute;
+  inset: 0;
+}
+
+.contact-terminal-react-root,
+.contact-terminal-react-root .faulty-terminal-container {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-terminal-react-root canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  opacity: 0.92;
+}
+
+.contact-terminal-fallback {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top, rgba(41, 151, 255, 0.18), transparent 28rem),
+    linear-gradient(180deg, #020302 0%, #05110a 100%);
+}
+
+.contact-terminal-vignette {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.48) 100%),
+    radial-gradient(circle at center, transparent 28%, rgba(0, 0, 0, 0.52) 100%);
+  pointer-events: none;
+}
+
+.contact-terminal-scan {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.04) 0,
+    rgba(255, 255, 255, 0.04) 1px,
+    transparent 1px,
+    transparent 5px
+  );
+  mix-blend-mode: screen;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.contact-hero-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 1rem;
+  max-width: 48rem;
+  padding: 3rem;
+}
+
+.contact-hero-content h2 {
+  margin: 0;
+  max-width: 11ch;
+  font-size: clamp(2.5rem, 6vw, 4.4rem);
+  line-height: 0.98;
+  color: #ffffff;
+}
+
+.contact-hero-content .section-description {
+  margin: 0;
+  max-width: 56ch;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.contact-summary-list {
+  margin-top: 0.5rem;
+}
+
+.contact-summary-list li {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.contact-info-card {
+  min-height: 100%;
+}
+
+.contact-info-card h2 {
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+  font-size: clamp(1.55rem, 3vw, 2rem);
+}
+
+.contact-info-card p {
+  margin: 0 0 1rem;
+  color: var(--text-soft);
+}
+
+.contact-info-card--wide {
+  grid-column: 1 / -1;
+}
+
+.contact-issue-link {
+  font-weight: 600;
+}
+
 @media (max-width: 960px) {
   .hero-shell,
   .post-link {
@@ -566,6 +700,10 @@ a:hover {
   .guide-grid,
   .summary-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-info-grid {
+    grid-template-columns: 1fr;
   }
 
   .hero-image,
@@ -601,6 +739,18 @@ a:hover {
   .card,
   .article-page {
     padding: 1.35rem;
+  }
+
+  .contact-hero-panel {
+    min-height: 32rem;
+  }
+
+  .contact-hero-content {
+    padding: 1.35rem;
+  }
+
+  .contact-hero-content h2 {
+    max-width: none;
   }
 
   .footer-content {
