@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="콘텐츠 허브의 문의 페이지입니다. 콘텐츠 수정 요청, 링크 오류 제보, 운영 관련 문의를 보낼 수 있는 현재 공개 채널을 안내합니다."
+      content="콘텐츠 허브 문의 페이지입니다. 콘텐츠 수정 요청, 링크 오류 제보, 운영 관련 문의를 보낼 수 있는 현재 공개 채널을 안내합니다."
     />
     <link rel="canonical" href="https://contents-hub.pages.dev/contact.html" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="문의 | 콘텐츠 허브" />
+    <meta property="og:title" content="콘텐츠 허브 문의 페이지" />
     <meta
       property="og:description"
       content="콘텐츠 허브 운영 관련 문의, 수정 요청, 링크 오류 제보를 위한 현재 공개 문의 채널을 안내합니다."
     />
     <meta property="og:url" content="https://contents-hub.pages.dev/contact.html" />
     <meta name="author" content="콘텐츠 허브 운영자" />
-    <title>문의 | 콘텐츠 허브</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <title>콘텐츠 허브 문의 페이지</title>
+    <link rel="preload" href="/styles.css" as="style" />
+    <link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="/styles.css" /></noscript>
+    <script src="./icon-loader.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8X6VN0MJ3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -41,14 +44,13 @@
         y.parentNode.insertBefore(t, y);
       })(window, document, "clarity", "script", "w3vvl5ocb8");
     </script>
-    <script src="./icon-loader.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">본문 바로가기</a>
     <header class="site-header" style="padding: 2rem 0 1.5rem;">
       <div class="container">
         <a href="./" style="text-decoration: none;"><p class="eyebrow">홈으로 돌아가기</p></a>
-        <h1>문의</h1>
+        <h1>콘텐츠 허브 문의 페이지</h1>
         <p class="intro">
           정적 페이지 기반의 사이트이지만, 수정 요청과 운영 문의가 닿는 경로는 분명하게 공개해 두고 있습니다.
         </p>
@@ -148,6 +150,14 @@
       </div>
     </footer>
 
-    <script type="module" src="./contact-react.js"></script>
+    <script>
+      const loadContactBackground = () => import("./contact-react.js");
+
+      if ("requestIdleCallback" in window) {
+        requestIdleCallback(loadContactBackground, { timeout: 2000 });
+      } else {
+        window.addEventListener("load", loadContactBackground, { once: true });
+      }
+    </script>
   </body>
 </html>

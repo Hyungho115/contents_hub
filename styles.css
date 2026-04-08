@@ -691,9 +691,26 @@ a:hover {
   font-weight: 600;
 }
 
+.error-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.72fr);
+  gap: 1.4rem;
+  align-items: stretch;
+}
+
+.error-card {
+  align-self: stretch;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.error-main {
+  padding: 2rem 0 3rem;
+}
+
 @media (max-width: 960px) {
   .hero-shell,
-  .post-link {
+  .post-link,
+  .error-shell {
     grid-template-columns: 1fr;
   }
 
